@@ -25,6 +25,33 @@ body {
   justify-content: space-between;
   gap: 1.5rem;
   border-radius: 30px;
+  position: relative;
+}
+@keyframes throw {
+  0% {
+    bottom: 0;
+    right: 285px;
+  }
+  50% {
+    right: 94%;
+    bottom: 50%;
+  }
+  100% {
+    right: 290px;
+    bottom: 100%;
+  }
+}
+.ball {
+  display: none;
+  width: 70px;
+  height: 70px;
+}
+.header:hover .ball {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 290px;
+  animation: throw 5s ease 0.2s 1 backwards;
 }
 .header-title {
   flex: 1;
