@@ -345,6 +345,15 @@ body {
   }
 
   /* for matches  */
+  .matches {
+    height: auto;
+  }
+  .versus {
+    margin-top: 30px;
+  }
+  .match-info {
+    margin-bottom: 30px;
+  }
   /* footer  */
   .footer {
     height: 100vh;
@@ -426,6 +435,10 @@ body {
     margin-bottom: 0;
     border: 1px solid #e8e8e8;
   }
+  .info {
+    flex: 0;
+    height: fit-content;
+  }
   .blogs,
   .matches {
     grid-template-columns: repeat(1, 1fr);
@@ -434,6 +447,16 @@ body {
   .blog:nth-child(8),
   .blog:nth-child(9) {
     display: none;
+  }
+  .matches {
+    height: auto;
+  }
+  .versus {
+    margin-top: 30px;
+    gap: 2.5rem;
+  }
+  .match-info {
+    margin-bottom: 30px;
   }
   .footer {
     height: 100vh;
